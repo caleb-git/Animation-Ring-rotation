@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.container{
+    width:300px;
+    height: 300px;
+    position: relative;
+    border: 5px solid transparent;
+   
+}
+
+.rojo{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-right: 5px solid red;
+    border-left: 5px solid red;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-radius: 50%;
+    animation: girar 1.2s linear infinite;
+
+}
+
+.verde{
+    position: absolute;
+    top:40px;
+    left: 40px;
+    right:40px;
+    bottom: 40px;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 5px solid greenyellow;
+    border-bottom: 5px solid greenyellow;
+    border-radius: 50%;
+    animation: girar2 1.2s linear infinite;
+
+}
+
+.amarillo{
+    position: absolute;
+    top:80px;
+    left: 80px;
+    right:80px;
+    bottom: 80px;
+    border-right: 5px solid yellow;
+    border-left: 5px solid yellow;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-radius: 50%;
+    animation: girar 1.2s linear infinite;
+
+}
+
+.blanco{
+    position: absolute;
+    top:120px;
+    left: 120px;
+    right:120px;
+    bottom: 120px;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    background-color: white;
+    border-radius: 50%;
+    animation: girar2 0.8s linear infinite;
+
+}
+
+/*ANIMACION*/
+
+@keyframes girar{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+@keyframes girar2{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(-360deg);}
+}
